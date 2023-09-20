@@ -1,22 +1,11 @@
 import tensorflow as tf
 from tensorflow import keras
 from keras import backend as K
-import tensorflow as tf
-from tensorflow.keras import layers, models
-from tensorflow.keras.preprocessing.image import load_img, img_to_array,array_to_img
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense,Flatten,Conv2D,Conv2DTranspose
-from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input, Dense
-from keras.regularizers import l1
-from keras import backend as K
 import sys
 import time
 import os
 import gc
 import numpy as np
-import matplotlib.pyplot as plt
-import random as rnd
 
 def rgb2ycbcr(im):
     xform = np.array([[.299, .587, .114], [-.1687, -.3313, .5], [.5, -.4187, -.0813]])
